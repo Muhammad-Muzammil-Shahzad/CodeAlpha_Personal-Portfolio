@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./Background-Animation.html">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <title>PORTFOLIO</title>
+</head>
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div> <!-- stats - count particles -->
+<div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+<header>
+  <aside class="asideleft" data-aos="fade-right">
+    <img src="iconimg.png" alt="" class="headericon" style="width: 250px; height: 90px;" />
+    <p class="portfolioTxt">Muzammil Development</p>
+  </aside>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" id="menuCheckbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li>
+          <label for="menuCheckbox"><a href="#homeSection">Home</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#aboutsection">About</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#skillsSection">Skills</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#educationsection">Education</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#servicessection">Services</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#projectssection">Projects</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#Contactsection">Contact</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="#lastSection">Links</a></label>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <aside class="asideright">
+    <a href="#homeSection" class="headLinks">Home</a>
+    <a href="#aboutsection" class="headLinks">About</a>
+    <a href="#skillsSection" class="headLinks">Skills</a>
+    <a href="#educationsection" class="headLinks">Education</a>
+    <a href="#servicessection" class="headLinks">Services</a>
+    <a href="#projectssection" class="headLinks">Projects</a>
+    <a href="#Contactsection" class="headLinks">Contact</a>
+    <a href="#lastSection" class="headLinks">Links</a>
+  </aside>
+</header>
+<section class="homeSection" id="homeSection">
+  <aside class="HMSleft">
+    <p class="itsMe">Hi, It's Me</p>
+    <div class="fullname">
+      <p class="fname">MUHAMMAD</p>
+      <p class="lname">&nbsp; MUZAMMIL</p>
+    </div>
+    <div class="fullrole">
+      <p class="iam">I am a</p>
+      <p class="Frontend">&nbsp;</p>
+    </div>
+    <div class="button-container">
+      <a href="https://github.com/Muhammad-Muzammil-Shahzad" class="socialsbtn" title="Visit GitHub" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/muhammad-muzammil786/" class="socialsbtn btn--2" title="Visit LinkedIn"
+        target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://discord.com/channels/@me/1259814492330790965" class="socialsbtn btn--2" title="Visit Discord"
+        target="_blank">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.instagram.com/itz_muzammil_code786/" class="socialsbtn btn--2" title="Visit Instagram"
+        target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <a href="resume.pdf" download target="_blank"><button class="downloadbtn">DOWNLOAD CV</button></a>
+  </aside>
+  <div class="wrapper">
+    <div class="hexagon"></div>
+  </div>
+</section>
+<section class="aboutsection" id="aboutsection">
+  <div class="wrapper-2" data-aos="fade-right">
+    <div class="hexagon-2">
+      <div class="forAboutmeImg"></div>
+    </div>
+  </div>
+  <aside class="aboutMeaside" data-aos="fade-left">
+    <div class="aboutMeheading">
+      <p class="about">About</p>
+      &nbsp;
+      <p class="me">Me</p>
+    </div>
+    <p class="aboutfrontend">Frontend Developer !</p>
+    <p class="aboutSecTxt">
+      Hi, I am a dedicated Frontend Developer, Ui/UX designer and graphic
+      designer, with a strong passion for creating a clean, responsible and
+      user-focused digital experience. However, I am a new confirmation, I
+      have developed solid skills in HTML, CSS, JavaScript, Bootstrap and
+      Adobe Photoshop, and I am always eager to learn and improve. I am an
+      expert in designing user interfaces with intuitive knowledge and
+      preparing modern websites that blend the functionality with visual
+      appeal. I am currently working as a freelancer and am also open to
+      overtocks where I can contribute, grow and bring creative ideas to
+      life.
+    </p>
+  </aside>
+</section>
+<section class="skillsSection" id="skillsSection">
+  <div class="skillsection-child">
+    <div class="myskillheading" data-aos="zoom-in-down">
+      <p>My</p>
+      &nbsp;
+      <p class="skills">Skills</p>
+    </div>
+    <div class="skillMain" id="progress-section">
+      <aside class="skillMainleft" data-aos="zoom-in-up">
+        <div class="skillCatagory">Coding Skills</div>
+        <div class="codingSkills">
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">HTML 5</p>
+              <div class="percentage">
+                <p id="counter-1">0</p>
+                <p class="sign">%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-1 barfull" id="progress-bar-1" data-width="99"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">CSS 3</p>
+              <div class="percentage">
+                <p id="counter-2">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-2 barfull" id="progress-bar-2" data-width="90"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">JavaScript</p>
+              <div class="percentage">
+                <p id="counter-3">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-3 barfull" id="progress-bar-3" data-width="80"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">Bootstrap</p>
+              <div class="percentage">
+                <p id="counter-4">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-4 barfull" id="progress-bar-4" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="skillMainright" data-aos="zoom-in-up">
+        <div class="skillCatagory">Professional Skills</div>
+        <div class="professionalSkills">
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">Web Development</p>
+              <div class="percentage">
+                <p id="counter-5">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-5 barfull" id="progress-bar-5" data-width="85"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">Web Designing</p>
+              <div class="percentage">
+                <p id="counter-6">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-6 barfull" id="progress-bar-6" data-width="75"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">Graphic Designing</p>
+              <div class="percentage">
+                <p id="counter-7">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-7 barfull" id="progress-bar-7" data-width="90"></div>
+            </div>
+          </div>
+          <div class="barmain">
+            <div class="barinfo">
+              <p class="skillname">Vlog Editting</p>
+              <div class="percentage">
+                <p id="counter-8">0</p>
+                <p>%</p>
+              </div>
+            </div>
+            <div class="barEmpty">
+              <div class="barfull-8 barfull" id="progress-bar-8" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="educationsection" id="educationsection">
+  <div class="educationHead" data-aos="fade-down">My <p class="educationtag"> &nbsp; Education</p>
+  </div>
+  <div class="educationmain">
+    <div class="educationCatogory">
+      <div class="EducationYear">
+        <div class="EducationNumber">2023</div>
+        <div class="NumberBelow">SSC(Matric)</div>
+      </div>
+      <div class="Educationtxt">
+        <div class="EducationName">Matriculation</div>
+        <div class="EducationDetail">I have Done Matriculation From BISE Peshawar with A+ Grade</div>
+      </div>
+    </div>
+    <div class="educationCatogory">
+      <div class="EducationYear">
+        <div class="EducationNumber">2025</div>
+        <div class="NumberBelow">HSSC (FSc)</div>
+      </div>
+      <div class="Educationtxt">
+        <div class="EducationName">FSc Computer Science</div>
+        <div class="EducationDetail"> I have Done FSc (2nd Year) From BISE Peshawar with A+ Grade</div>
+      </div>
+    </div>
+    <div class="educationCatogory">
+      <div class="EducationYear">
+        <div class="EducationNumber">2025-28</div>
+        <div class="NumberBelow">BSCS</div>
+      </div>
+      <div class="Educationtxt">
+        <div class="EducationName">(BSCS) &nbsp; Computer Science</div>
+        <div class="EducationDetail">Currently I am a Student of BSCS in University Of Peshawar</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="servicessection" id="servicessection">
+  <div class="servicesection-child">
+    <div class="servicesDiv  servicesHead">Services</div>
+    <div class="servicesDiv">
+      <div class="tilting-card-wrapper ServiceMainDiv" data-aos="zoom-in">
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="tilting-card-body">
+          <p>
+            <img src="icons8-web-development-50.png" alt="" class="serviceLogo">
+          <div class="serviceName">Web Development</div>
+          <div class="serviceDetail">I build responsive, modern and high performance websites to your business
+            needs. From static pages to dynamic web apps, i can make Porfolio, Landing Pages E-Commerece website and
+            many more as you want.</div>
+          </p>
+          <div class="front"></div>
+          <div class="holo"></div>
+        </div>
+      </div>
+      <div class="tilting-card-wrapper ServiceMainDiv" data-aos="zoom-in">
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="tilting-card-body">
+          <p>
+            <img src="icons8-web-designing-66.png" alt="" class="serviceLogo">
+          <div class="serviceName">Web Designing</div>
+          <div class="serviceDetail">I create visually appealing, user-friendly, and responsive website designs that
+            reflect your brand identity. My focus is on clean layouts, intuitive navigation, and a seamless user
+            experience across all screen sizes.</div>
+          </p>
+          <div class="front"></div>
+          <div class="holo"></div>
+        </div>
+      </div>
+      <div class="tilting-card-wrapper ServiceMainDiv" data-aos="zoom-in">
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="tilting-card-body">
+          <p>
+            <img src="icons8-graphic-designing-53.png" alt="" class="serviceLogo">
+          <div class="serviceName">Graphic Designing</div>
+          <div class="serviceDetail">I craft eye-catching and impactful visuals that enhance your brand's identity. From
+            logos and social media posts to banners and marketing materials, I deliver clean, creative designs that
+            connect with your audience.</div>
+          </p>
+          <div class="front"></div>
+          <div class="holo"></div>
+        </div>
+      </div>
+      <div class="tilting-card-wrapper ServiceMainDiv" data-aos="zoom-in">
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="mouse-position-tracker"></div>
+        <div class="tilting-card-body">
+          <p>
+            <img src="icons8-video-editing-80.png" alt="" class="serviceLogo">
+          <div class="serviceName">Video Editting</div>
+          <div class="serviceDetail">I offer professional video editing services to bring your content to life. From
+            cutting and transitions to effects, color correction, and audio sync, I ensure polished, engaging videos
+            tailored to your style and purpose.</div>
+          </p>
+          <div class="front"></div>
+          <div class="holo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projectssection" id="projectssection">
+  <div class="projectheading">Projects</div>
+  <div class="projects">
+    <div class="project-branch">
+      <div class="flip-card" data-aos="fade-down-right">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Dynamic Quiz Application</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <p></p>
+            <a href="https://quiz-app-zeta-cyan.vercel.app/" class="title" target="_blank"><button class="titleBTn">Live
+                Preview</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-down">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Weather Forecast Application</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://weather-application-brown-three.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-down">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Currency Convertor Application</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://dynamic-currency-convertor.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-down-left">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Basic Calculator</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://code-alpha-basic-calculator.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-branch">
+      <div class="flip-card" data-aos="fade-up-right">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Netflix Clone Website</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://netflix-landing-page-sigma.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Word Counter</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://word-counter-self-one.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Measuring Unit Convertor</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://unit-convertor-chi.vercel.app/" class="title" target="_blank"><button class="titleBTn">Live
+                Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-up-left">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">Comment Section Application</p>
+            <p></p>
+          </div>
+          <div class="flip-card-back">
+            <a href="https://comment-section-puce-pi.vercel.app/" class="title" target="_blank"><button
+                class="titleBTn">Live Preview</button></a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="Contactsection" id="Contactsection">
+  <div class="contactus">CONTACT US</div>
+  <form action="https://api.web3forms.com/submit" method="POST" class="mainform">
+    <input type="hidden" name="access_key" value="5028d15e-44f9-4308-8130-6217e1abd932">
+    <div class="namediv">
+      <input type="text" class="nametxt1 contactFields" placeholder="First Name" required name="First Name:">
+      <input type="text" class="nametxt2 contactFields" placeholder="Last Name (Optional)" name="Last Name :">
+    </div>
+    <div class="infodiv">
+      <input type="number" class="phnum contactFields" placeholder="WhatsApp NO" name="WhatsApp NO:">
+      <input type="email" class="email contactFields" placeholder="E-Mail" required name="E-Mail:">
+    </div>
+    <textarea name="Message" id="comment" rows="7" cols="45" placeholder="Write Your Messagge Here..."
+      class="comment contactFields" required></textarea>
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <button type="submit" class="submittbn contactFields" style=" padding: 5px;">Submit</button>
+  </form>
+</section>
+<footer class="lastSection" id="lastSection">
+  <p class="footertxt">
+    Crafted with passion by a creative Web Developer & Graphic Designer.
+    I help businesses stand out with responsive websites and stunning visuals.
+    Ready to bring your vision to life? <strong>Let's build something amazing together.</strong>
+  </p>
+  <ul class="links1 links">
+    <li class="links"><a href="" class="ftlink">Home</a></li>
+    <li><a href="" class="ftlink">About</a></li>
+    <li><a href="" class="ftlink">Services</a></li>
+    <li><a href="" class="ftlink">Projects</a></li>
+    <li><a href="" class="ftlink">Contact</a></li>
+  </ul>
+  <ul class="links2">
+    <li><a href="" class="ftlink">Request a Quote</a></li>
+    <li><a href="" class="ftlink">Hire Me / Book a consultant</a></li>
+    <li><a href="" class="ftlink">FAQs</a></li>
+    <li><a href="" class="ftlink">Support</a></li>
+  </ul>
+  <ul class="links3">
+    <li><a href="" class="ftlink">Privacy Policy</a></li>
+    <li><a href="" class="ftlink">Terms & Conditions</a></li>
+    <li><a href="" class="ftlink">Refund Policy</a></li>
+    <li><a href="" class="ftlink">Disclaimer</a></li>
+  </ul>
+  <ul class="links4">
+    <li><a href="" class="ftlink">linkedIn</a></li>
+    <li><a href="" class="ftlink">Github</a></li>
+    <li><a href="" class="ftlink">Discord</a></li>
+    <li><a href="" class="ftlink">Instagram</a></li>
+  </ul>
+  <ul class="links5">
+    <li><a href="" class="ftlink">muzammillrh999@gmail.com</a></li>
+    <li><a href="" class="ftlink">+92 315 9999999</a></li>
+  </ul>
+</footer>
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = 0;
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  });
+
+  var typed = new Typed(".Frontend", {
+    strings: ["&nbsp; UX/UI DESIGNER", "&nbsp; GRAPHIC DESIGNER", "&nbsp; FRONT-END DEVELOPER", "&nbsp; UX/UI DESIGNER"],
+    typedSpeed: 60,
+    backSpeed: 55,
+    loop: true
+  })
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const targetValues = [99, 90, 80, 85, 85, 75, 80, 70];
+
+  const counters = targetValues.map((_, i) =>
+    document.getElementById(`counter-${i + 1}`)
+  );
+
+  let obj = {};
+  targetValues.forEach((_, i) => (obj[`val${i + 1}`] = 0));
+
+  const counterAnim = gsap.to(obj, {
+    duration: 3,
+    ease: "power1.out",
+    paused: true,
+    ...Object.fromEntries(
+      targetValues.map((val, i) => [`val${i + 1}`, val])
+    ),
+    onUpdate: () => {
+      counters.forEach((el, i) => {
+        el.textContent = Math.floor(obj[`val${i + 1}`]);
+      });
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: "#stats-section",
+    start: "top 80%",
+    end: "bottom top",
+    onEnter: () => setTimeout(() => counterAnim.play(), 1000),
+    onEnterBack: () => setTimeout(() => counterAnim.play(), 1000),
+    onLeave: resetCounters,
+    onLeaveBack: resetCounters,
+  });
+
+  function resetCounters() {
+    targetValues.forEach((_, i) => {
+      obj[`val${i + 1}`] = 0;
+      counters[i].textContent = 0;
+    });
+    counterAnim.pause(0);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const bar = entry.target.querySelector('.barfull');
+      const targetWidth = entry.target.getAttribute('data-width');
+
+      if (entry.isIntersecting) {
+        bar.style.width = targetWidth;
+      } else {
+        bar.style.width = '0%';
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  document.querySelectorAll('.barEmpty').forEach(bar => {
+    observer.observe(bar);
+  });
+
+  particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+</body>
+
+</html>

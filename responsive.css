@@ -1,0 +1,332 @@
+@media screen and (min-width: 100px) and (max-width: 880px) {
+
+    .asideright,
+    .headericon {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .portfolioTxt {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+        font-size: 19px;
+        font-weight: light;
+        font-family: "Dancing Script", cursive;
+        position: relative;
+        color: #00d6e5;
+        top: 10px;
+    }
+
+    .homeSection {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .hexagon,
+    .wrapper {
+        position: relative;
+        top: 50px;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: 30px;
+        align-self: center;
+    }
+
+    .download {
+        position: relative;
+        bottom: 90px;
+        align-self: center;
+    }
+
+    .fullname {
+        font-size: 28px;
+    }
+
+    #menuToggle {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+        position: fixed;
+        top: 30px;
+        right: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+        color: #01eeff;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: white;
+    }
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        max-width: 400px;
+        width: 100vw;
+        max-height: 100vh;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 125px;
+        right: -100px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        background: rgba(0, 0, 0, 0.85);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menu li label {
+        cursor: pointer;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+        opacity: 1;
+    }
+
+    .aboutsection {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aboutMeaside {
+        margin: 15px;
+    }
+
+    .aboutSecTxt {
+        width: auto;
+
+    }
+
+    .skillsSection {
+        height: auto;
+    }
+
+    .skillMain {
+        flex-direction: column;
+    }
+
+    .educationsection {
+        height: auto;
+    }
+
+    .educationCatogory {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .EducationYear {
+        margin: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .educationHead {
+        margin-top: 50px;
+    }
+
+    .Educationtxt {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin: 0;
+    }
+
+    .EducationDetail {
+        text-align: center;
+    }
+
+    .servicessection {
+        height: auto;
+    }
+
+    .servicesHead {
+        margin-top: 50px;
+    }
+
+    .servicesDiv {
+        flex-direction: column;
+    }
+
+    .ServiceMainDiv {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nametxt1,
+    .nametxt2,
+    .phnum,
+    .email {
+        width: 170px;
+        height: 35px;
+        margin-left: 3px;
+        margin-right: 3px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .comment {
+        padding: 20px;
+        border-radius: 20px;
+        width: 310px;
+    }
+
+    .lastSection {
+        height: auto;
+    }
+
+    .footertxt,
+    .links5,
+    .links4 {
+        display: none;
+        opacity: 0;
+        cursor: none;
+    }
+
+    .projectssection {
+        height: auto;
+    }
+
+    .projectheading {
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .JavaScriptpro {
+        margin-bottom: 50px;
+    }
+
+    .skillsection-child {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .servicesection-child {
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 470px) {
+
+    .codingSkills,
+    .professionalSkills {
+        width: 370px;
+    }
+
+    .barmain {
+        width: 370px;
+    }
+
+    .barEmpty {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 380px) {
+
+    .codingSkills,
+    .professionalSkills {
+        width: 350px;
+    }
+
+    .barmain {
+        width: 350px;
+    }
+
+    .barEmpty {
+        width: 330px;
+    }
+
+    .barinfo {
+        width: 340px;
+    }
+
+    .projectssection {
+        height: auto;
+    }
+
+    .JavaScriptpro {
+        margin-top: 20px;
+    }
+
+    .projectheading {
+        margin-top: 30px;
+    }
+}
